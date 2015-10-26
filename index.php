@@ -6,8 +6,7 @@ $config = require 'config.php';
 $app = new \Slim\Slim($config);
 
 $app->get('/', function() use($app) {
-    // echo "<h1>Hello world</h1";
-  $app->render('html.php');
+  $app->render('application.php');
 });
 
 $app->get('/blog/:alias', function($alias){
